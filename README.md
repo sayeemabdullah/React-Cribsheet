@@ -43,3 +43,9 @@ $ npm start
 
 **npm** is for package and dependency management and **npx** is for project management.
 
+
+After starting our project we will see **node_modules** which there are 3rd party libraries and react itselves, **public** for public assets and **src** for basic components. 
+
+To convert modern javascript to browser understandable javascript we can use [Babel](https://babeljs.io/).
+
+
