@@ -84,7 +84,7 @@ ES6 stands for ECMAScript 6 (6th version of ECMAScript) which was created to sta
 
 `const` is used to assign value to variables which cannot be re-assigned anywhere in the code.
 
-#### Objects
+#### Objects & Object Destructuring
 
 Objects are collections of key value pairs. We can make an object like below:
 
@@ -100,6 +100,19 @@ const person = {
 
 To access the members we can use `person.talk()` or `person[‘name’] = ‘Abdullah’`. 
 
+We can extract the properties like below code without going the tradition way:
+
+``` js
+
+const address = {
+    street: '',
+    city: '',
+    country: ''
+};
+
+const {street , city , country } = address;
+```
+
 #### this
 
 `this` is a keyword in JavaScript which doesn’t behave same as C# or Java. The value of `this` is determined by how a function is called. If it is called as a method in an object it will return the reference to that object and if it's called outside of an object it will return the global object or window object.
@@ -107,9 +120,7 @@ To access the members we can use `person.talk()` or `person[‘name’] = ‘Abd
 If we want to fix that we can use bind function so that we get reference everytime like below: 
 
 ``` js
-
 const walk = person.walk.bind(person);
-
 ``` 
 
 #### Arrow Functions
@@ -131,8 +142,7 @@ const cube = (number) => number * number * number;
 
 ```
 
-The arrow function is easier to read and easier to write.
-
+The arrow function is easier to read and easier to write. 
 
 ####  Array.map Method 
 
