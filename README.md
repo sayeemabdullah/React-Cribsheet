@@ -112,7 +112,6 @@ const walk = person.walk.bind(person);
 
 ``` 
 
-
 #### Arrow Functions
 
 We have used function like below before:
@@ -134,6 +133,15 @@ const cube = (number) => number * number * number;
 
 The arrow function is easier to read and easier to write.
 
+
+####  Array.map Method 
+
+``` js
+const colors = ['red' , 'green', 'blue'];
+const items = colors.map(color => `<li>${color}</li>`);
+```
+
+The above code is pretty self explanatory. 
 
 ___
 
