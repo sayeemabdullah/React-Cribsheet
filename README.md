@@ -180,5 +180,46 @@ const combined2 = ["a", ...first, "b" ,...second, "c"];
 
 #### Classes
 
+To declare a class, we can use the class keyword and create object like below: 
+
+``` js
+class Person{
+    constructor(name){
+        this.name = name;
+    }
+
+    walk(){
+        console.log("walk");
+    }
+}
+
+const person = new Person('Sayeem');
+console.log(person.name);
+
+```
+
+#### Inheritance
+
+We can inherit the above class into another class by following code:
+
+``` js
+
+class Teacher extends Person{
+    
+    constructor(name,degree){
+        super(name);
+        this.degree = degree;
+    }
+    
+    teach(){
+        console.log("teach");
+    }
+}
+
+```
+
+Here `super()` is used to set a name in the parent class. 
+
+
 ___
 
