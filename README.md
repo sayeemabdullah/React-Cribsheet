@@ -153,5 +153,30 @@ const items = colors.map(color => `<li>${color}</li>`);
 
 The above code is pretty self explanatory. 
 
+#### Spread Operator
+
+To combine two arrays we normally use code like below:
+
+``` js
+
+const first = [1,2,3];
+const second = [4,5,6];
+
+const combined = first.concat(second);
+
+``` 
+But if we can use a spread operator we can do that more easily and add anything before, between or after arrays like following:
+
+```js
+
+const first = [1,2,3];
+const second = [4,5,6];
+
+const combined1 = [...first, ...second];
+const combined2 = ["a", ...first, "b" ,...second, "c"];
+
+
+```
+
 ___
 
