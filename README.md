@@ -115,5 +115,7 @@ const walk = person.walk.bind(person);
 
 #### Arrow Functions
 
+
+
 ___
 
