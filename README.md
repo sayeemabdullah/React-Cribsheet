@@ -43,8 +43,27 @@ $ npm start
 
 **npm** is for package and dependency management and **npx** is for project management.
 
-
 After starting our project we will see **node_modules** which there are 3rd party libraries and react itselves, **public** for public assets and **src** for basic components. 
 
 To see the conversion of modern javascript to browser-compatible JavaScript we can use [Babel](https://babeljs.io/).
 
+
+___
+
+## Hello World!
+
+To print **“Hello World!”** in our screen we can write the following code:
+
+``` js
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const element = <h1>Hello World!</h1>
+ReactDOM.render(element, document.getElementById('root'))
+
+```
+
+Here we import `react` for the components and `react-dom` for rendering the components in the DOM (Document Object Model).
+
+___
