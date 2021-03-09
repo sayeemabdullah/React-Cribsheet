@@ -115,6 +115,24 @@ const walk = person.walk.bind(person);
 
 #### Arrow Functions
 
+We have used function like below before:
+
+``` js
+
+const cube = function(number){
+    return number * number * number;
+}
+
+```
+We can write the above code in arrow function like below:
+
+``` js
+
+const cube = (number) => number * number * number;
+
+```
+
+The arrow function is easier to read and easier to write.
 
 
 ___
