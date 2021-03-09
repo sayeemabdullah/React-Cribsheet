@@ -104,7 +104,16 @@ To access the members we can use `person.talk()` or `person[‘name’] = ‘Abd
 
 `this` is a keyword in JavaScript which doesn’t behave same as C# or Java. The value of `this` is determined by how a function is called. If it is called as a method in an object it will return the reference to that object and if it's called outside of an object it will return the global object or window object.
 
-If we want to fix that we can use bind function. 
+If we want to fix that we can use bind function so that we get reference everytime like below: 
+
+``` js
+
+const walk = person.walk.bind(person);
+
+``` 
+
+
+#### Arrow Functions
 
 ___
 
