@@ -46,6 +46,5 @@ $ npm start
 
 After starting our project we will see **node_modules** which there are 3rd party libraries and react itselves, **public** for public assets and **src** for basic components. 
 
-To convert modern javascript to browser-compatible JavaScript we can use [Babel](https://babeljs.io/).
-
+To see the conversion of modern javascript to browser-compatible JavaScript we can use [Babel](https://babeljs.io/).
 
