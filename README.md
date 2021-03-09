@@ -25,7 +25,7 @@ I used `create-react-app@4.0.3`.We can use [Visual Studio Code](https://code.vis
 
 ## Creating & Starting Application
 
-To create our first app we have to first go to our desired folder and use the below command:
+To create our app we have to first go to our desired folder and use the below command:
 
 ``` shell
 
@@ -40,3 +40,6 @@ And now to start our project we will use the following command after going to ou
 $ npm start
 
 ```
+
+**npm** is for package and dependency management and **npx** is for project management.
+
