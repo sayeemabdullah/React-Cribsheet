@@ -23,7 +23,7 @@ $sudo npm i -g create-react-app
 I used `create-react-app@4.0.3`.We can use [Visual Studio Code](https://code.visualstudio.com/) as our code editor. Inside [Visual Studio Code](https://code.visualstudio.com/) we can install [Prettier - Code](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) formatter to make our code prettier and easier to read/debug and [Simple React Snippets](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets) for snippets of usable React codes.
 
 
-## Creating Application
+## Creating & Starting Application
 
 To create our first app we have to first go to our desired folder and use the below command:
 
