@@ -67,3 +67,44 @@ ReactDOM.render(element, document.getElementById('root'))
 Here we import `react` for the components and `react-dom` for rendering the components in the DOM (Document Object Model).
 
 ___
+
+## ES6
+
+ES6 stands for ECMAScript 6 (6th version of ECMAScript) which was created to standardize JavaScript.
+
+#### let
+
+`let` is used to assign value to variables in a block which cannot be accessed outside.
+
+#### var
+
+`var` is used to assign value to variables which can be accessed anywhere.
+
+#### const
+
+`const` is used to assign value to variables which cannot be re-assigned anywhere in the code.
+
+#### Objects
+
+Objects are collections of key value pairs. We can make an object like below:
+
+``` js
+
+const person = {
+    name: 'Sayeem',
+    walk(){},
+    run(){}
+};
+
+```
+
+To access the members we can use `person.talk()` or `person[‘name’] = ‘Abdullah’`. 
+
+#### this
+
+`this` is a keyword in JavaScript which doesn’t behave same as C# or Java. The value of `this` is determined by how a function is called. If it is called as a method in an object it will return the reference to that object and if it's called outside of an object it will return the global object or window object.
+
+If we want to fix that we can use bind function. 
+
+___
+
