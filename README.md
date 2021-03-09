@@ -178,5 +178,7 @@ const combined2 = ["a", ...first, "b" ,...second, "c"];
 
 ```
 
+#### Classes
+
 ___
 
