@@ -221,5 +221,56 @@ class Teacher extends Person{
 Here `super()` is used to set a name in the parent class. 
 
 
+#### Modules 
+
+We can divide our project files into different modules which will help us to organize our code better. To do so we can create two files `person.js` and `teacher.js`. Then do the following :
+
+``` js
+
+//person.js
+
+export class Person{
+    constructor(name){
+        this.name = name;
+    }
+
+    walk(){
+        console.log("walk");
+    }
+}
+
+```
+``` js
+
+//teacher.js
+
+import {Person} from './person';
+
+export class Teacher extends Person{
+    
+    constructor(name,degree){
+        super(name);
+        this.degree = degree;
+    }
+    teach(){
+        console.log("teach");
+    }
+}
+
+```
+
+``` js
+
+//index.js
+
+import {Teacher} from './teacher';
+
+const teacher = new Teacher("Sayeem" , "BSc");
+console.log(teacher.degree);
+
+```
+Modules are private in default and to make them private we use **export** before **class**.
+
+
 ___
 
