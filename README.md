@@ -31,6 +31,7 @@ ___
 |[Creating & Starting Application](https://github.com/sayeemabdullah/React-Cribsheet#creating--starting-application)|
 |[Hello World!](https://github.com/sayeemabdullah/React-Cribsheet#hello-world)|
 |[ES6](https://github.com/sayeemabdullah/React-Cribsheet#es6)|
+|[Adding Bootstrap]()|
 |[Components](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#components)|
 <!---|[]()|
 |[]()|
@@ -292,6 +293,26 @@ Modules are private in default and to make them private we use **export** before
 
 ___
 
+## Adding Bootstrap
+
+First we need to install bootstrap using the terminal like below:
+
+``` shell
+
+$ npm i bootstrap
+
+``` 
+
+To import it in our project we will use the following code :
+
+``` js
+
+import 'bootstrap/dist/css/bootstrap.css';
+
+``` 
+
+___
+
 ## Components
 
 The heart of React application is component. Component is a piece of UI. A tree of components makes a complete UI. In the root of the tree is the main component (App). A component is implemented as a JavaScript class with some states and render. 
@@ -299,6 +320,7 @@ The heart of React application is component. Component is a piece of UI. A tree 
 
 
 ___
+
 
 
 
