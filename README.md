@@ -356,7 +356,11 @@ class Counter extends Component {
 export default Counter;
 
 ```
-If we don’t want to use `<div></div>` or any other element we can use `<React.Fragment></React.Fragment>` as parent. 
+If we don’t want to use `<div></div>` or any other element we can use `<React.Fragment></React.Fragment>` as parent. In our **render()** we can call function using **curly brackets** like below :
+
+``` js
+<span>{this.justAnotherFunction()}</span>
+``` 
 
 Let say we have a **state** where there is **count**. We can use in our code as `this.state.count` or like below :
 
@@ -365,6 +369,8 @@ Let say we have a **state** where there is **count**. We can use in our code as 
 const { count } = this.state;
 
 ```
+
+
 
 
 ___
