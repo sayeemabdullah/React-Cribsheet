@@ -358,6 +358,15 @@ export default Counter;
 ```
 If we don’t want to use `<div></div>` or any other element we can use `<React.Fragment></React.Fragment>` as parent. 
 
+Let say we have a **state** where there is **count**. We can use in our code as `this.state.count` or like below :
+
+``` js 
+
+const { count } = this.state;
+
+```
+
+
 ___
 
 
