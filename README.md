@@ -383,7 +383,7 @@ Later we can pass this object in the render:
 
 ``` js
 
-<span style={this.style} className="badge badge-warning m-2">
+<span style={this.style}>
     {this.justAnotherFunction()}
 </span>
 
