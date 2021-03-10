@@ -317,7 +317,43 @@ ___
 
 The heart of React application is component. Component is a piece of UI. A tree of components makes a complete UI. In the root of the tree is the main component (App). A component is implemented as a JavaScript class with some states and render. 
 
+The structure of a simple component is like below:
 
+``` js 
+
+import React, { Component } from 'react';
+
+class Name extends Component {
+    state = {  }
+    render() { 
+        return (  );
+    }
+}
+ 
+export default Name;
+
+```
+
+Something to remember that when we render elements there should be one parent element like `html <div></div>` as shown below: 
+
+``` js
+
+import React, { Component } from "react";
+
+class Counter extends Component {
+  render() {
+    return (
+      <div>
+        <h1>Hello World!</h1>
+        <button>Stop helloing me!</button>
+      </div>
+    );
+  }
+}
+
+export default Counter;
+
+```
 
 ___
 
