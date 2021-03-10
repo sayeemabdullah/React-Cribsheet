@@ -354,7 +354,7 @@ class Counter extends Component {
 export default Counter;
 
 ```
-
+If we don’t want to use `<div></div>` or any other element we can use `<React.Fragment></React.Fragment>` as parent. 
 ___
 
 
