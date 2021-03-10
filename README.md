@@ -368,6 +368,26 @@ const { count } = this.state;
 
 ```
 
+We can implement `styles` in our component by adding property lets call it **style** like below:
+
+``` js
+
+  style = {
+    fontSize: 12,
+    fontWeight: "bold",
+  };
+
+```
+
+Later we can pass this object in the render:
+
+``` js
+        <span style={this.style} className="badge badge-warning m-2">
+          {this.justAnotherFunction()}
+        </span>
+```
+
+
 ___
 
 
