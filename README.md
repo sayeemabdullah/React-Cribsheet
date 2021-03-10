@@ -72,7 +72,7 @@ ___
 
 ## Hello World!
 
-To print **“Hello World!”** in our screen we can write the following code:
+To print **“Hello World!”** in our screen we can write the following code inside `index.js`:
 
 ``` js
 
