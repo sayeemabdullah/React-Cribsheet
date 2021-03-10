@@ -315,7 +315,9 @@ ___
 
 ## Components
 
-The heart of React application is component. Component is a piece of UI. A tree of components makes a complete UI. In the root of the tree is the main component (App). A component is implemented as a JavaScript class with some states and render. 
+## Components
+
+The heart of React application is component. Component is a piece of UI. A tree of components makes a complete UI. In the root of the tree is the main component (App). A component is implemented as a JavaScript class with state and render. 
 
 The structure of a simple component is like below:
 
@@ -334,7 +336,7 @@ export default Name;
 
 ```
 
-Something to remember that when we render elements there should be one parent element like `<div></div>` as shown below: 
+Something to remember that when we render elements there should be one parent element like `html <div></div>` as shown below: 
 
 ``` js
 
@@ -355,6 +357,7 @@ export default Counter;
 
 ```
 If we don’t want to use `<div></div>` or any other element we can use `<React.Fragment></React.Fragment>` as parent. 
+
 ___
 
 
