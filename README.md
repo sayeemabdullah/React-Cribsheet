@@ -389,6 +389,14 @@ Later we can pass this object in the render:
 
 ```
 
+We can also write inline style like below :
+
+``` js
+
+<span style={{ fontSize: 50, fontWeight: "bold" }}>{this.justAnotherFunction()}</span>
+
+```
+
 
 ___
 
