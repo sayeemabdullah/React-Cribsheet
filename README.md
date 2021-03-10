@@ -315,7 +315,6 @@ ___
 
 ## Components
 
-## Components
 
 The heart of React application is component. Component is a piece of UI. A tree of components makes a complete UI. In the root of the tree is the main component (App). A component is implemented as a JavaScript class with state and render. 
 
