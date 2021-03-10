@@ -290,6 +290,8 @@ console.log(teacher.degree);
 ```
 Modules are private in default and to make them private we use **export** before **class**.
 
-
 ___
 
+## Components
+
+___
