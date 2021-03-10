@@ -334,7 +334,7 @@ export default Name;
 
 ```
 
-Something to remember that when we render elements there should be one parent element like `html <div></div>` as shown below: 
+Something to remember that when we render elements there should be one parent element like `<div></div>` as shown below: 
 
 ``` js
 
