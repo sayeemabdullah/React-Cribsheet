@@ -382,9 +382,11 @@ We can implement `styles` in our component by adding property lets call it **sty
 Later we can pass this object in the render:
 
 ``` js
-        <span style={this.style} className="badge badge-warning m-2">
-          {this.justAnotherFunction()}
-        </span>
+
+<span style={this.style} className="badge badge-warning m-2">
+    {this.justAnotherFunction()}
+</span>
+
 ```
 
 
