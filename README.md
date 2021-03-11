@@ -303,7 +303,7 @@ $ npm i bootstrap
 
 ``` 
 
-To import it in our index.js we will use the following code :
+To import it in our `index.js` we will use the following code :
 
 ``` js
 
