@@ -411,6 +411,19 @@ We first initialize a list name `tags` in the `state` which looks like **tags: [
 
 Here `key={tag}` is used so that it can be uniquely identified. It shouldn’t have to be unique in the whole component but only in that list. 
 
+
+#### Conditional Rendering
+
+We can use logical & operator for conditional rendering like the code below:
+
+``` js
+
+{this.state.tags.length === 0 && "Please create a new tag!"}
+
+```
+Here if the length is zero so which makes it true and when the first condition is true it prints the second condition. If there were 3 conditions or more then it will execute the last condition.  
+
+
 ___
 
 
