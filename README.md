@@ -466,6 +466,27 @@ There is another way of doing that, we can simply convert into an arrow function
 
 ```
 
+#### Passing Event Arguments
+
+We can pass event arguments using following code:
+
+
+``` js
+
+<button onClick={() => this.handleIncrement({ id: 1 })} > </button> 
+
+```
+
+``` js
+
+  handleIncrement = (product) => {
+    console.log(product);
+    this.setState({ count: this.state.count + 1 });
+  };
+
+```
+
+
 ___
 
 
