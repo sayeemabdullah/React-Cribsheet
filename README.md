@@ -486,6 +486,7 @@ We can pass event arguments using following code:
 
 ```
 
+In the place of `id : 1`, we can pass any parameter we want. 
 
 ___
 
