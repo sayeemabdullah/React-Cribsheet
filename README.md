@@ -418,11 +418,30 @@ We can use logical & operator for conditional rendering like the code below:
 
 ``` js
 
-{this.state.tags.length === 0 && "Please create a new tag!"}
+{this.state.tags.length === 0 && "No tags here!"}
 
 ```
-Here if the length is zero so which makes it true and when the first condition is true it prints the second condition. If there were 3 conditions or more then it will execute the last condition.  
+Here if the length is zero so which makes it true and when the first condition is true it prints the second condition. If there are 3 conditions or more then it will execute the last condition.
 
+
+####   Handling Events & Binding Event Handlers
+
+Let's say we have a button and in click it will console.log a message like below:
+
+``` js
+
+<button onClick={this.handleIncrement}>Click Here</button>
+
+```
+``` js
+
+handleIncrement() {
+    console.log("Increment Clicked!");
+  }
+
+```
+
+In the above case there is a problem, we cannot use this.state to use it  we need to bind the event handler like below :
 
 ___
 
