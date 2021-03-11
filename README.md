@@ -441,7 +441,8 @@ handleIncrement() {
 
 ```
 
-In the above case there is a problem, we cannot use this.state to use it  we need to bind the event handler like below :
+In the above case there is a problem, we cannot use `this` to use it  we need to bind the event handler like below :
+
 
 ___
 
