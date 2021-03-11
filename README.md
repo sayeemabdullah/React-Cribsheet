@@ -443,6 +443,28 @@ handleIncrement() {
 
 In the above case there is a problem, we cannot use `this` to use it  we need to bind the event handler like below :
 
+``` js
+
+  constructor() {
+    super();
+    this.handleIncrement = this.handleIncrement.bind(this);
+  }
+
+  handleIncrement() {
+    console.log("Increment Clicked!", this);
+  }
+
+```
+
+There is another way of doing that, we can simply convert into an arrow function as it does not rebind `this` function but inherit it. So the code will be like below :
+
+``` js
+
+ handleIncrement = () => {
+    console.log("Increment Clicked!", this);
+  };
+
+```
 
 ___
 
