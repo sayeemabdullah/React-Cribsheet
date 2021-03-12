@@ -12,7 +12,7 @@ $ sudo apt install npm
 
 ```
 
-After that we can use the below command to install package which will create react app:
+After that we can use the below command to install the package which will create react app:
 
 ``` shell
 
@@ -63,7 +63,7 @@ $ npm start
 
 **npm** is for package and dependency management and **npx** is for project management.
 
-After starting our project we will see **node_modules** which there are 3rd party libraries and react itselves, **public** for public assets and **src** for basic components. 
+After starting our project we will see **node_modules** which there are 3rd party libraries and react itself, **public** for public assets and **src** for basic components. 
 
 To see the conversion of modern javascript to browser-compatible JavaScript we can use [Babel](https://babeljs.io/).
 
@@ -94,19 +94,19 @@ ES6 stands for ECMAScript 6 (6th version of ECMAScript) which was created to sta
 
 #### let
 
-`let` is used to assign value to variables in a block which cannot be accessed outside.
+`let` is used to assign value to variables in a block that cannot be accessed outside.
 
 #### var
 
-`var` is used to assign value to variables which can be accessed anywhere.
+`var` is used to assign value to variables that can be accessed anywhere.
 
 #### const
 
-`const` is used to assign value to variables which cannot be re-assigned anywhere in the code.
+`const` is used to assign value to variables that cannot be re-assigned anywhere in the code.
 
 #### Objects & Object Destructuring
 
-Objects are collections of key value pairs. We can make an object like below:
+Objects are collections of key-value pairs. We can make an object like the below:
 
 ``` js
 
@@ -120,7 +120,7 @@ const person = {
 
 To access the members we can use `person.talk()` or `person[‘name’] = ‘Abdullah’`. 
 
-We can extract the properties like below code without going the tradition way:
+We can extract the properties like the below code without going the traditional way:
 
 ``` js
 
@@ -135,9 +135,9 @@ const {street , city , country } = address;
 
 #### this
 
-`this` is a keyword in JavaScript which doesn’t behave same as C# or Java. The value of `this` is determined by how a function is called. If it is called as a method in an object it will return the reference to that object and if it's called outside of an object it will return the global object or window object.
+`this` is a keyword in JavaScript which doesn’t behave the same as C# or Java. The value of `this` is determined by how a function is called. If it is called a method in an object it will return the reference to that object and if it's called outside of an object it will return the global object or window object.
 
-If we want to fix that we can use bind function so that we get reference everytime like below: 
+If we want to fix that we can use the bind function so that we get reference every time like below: 
 
 ``` js
 const walk = person.walk.bind(person);
@@ -145,7 +145,7 @@ const walk = person.walk.bind(person);
 
 #### Arrow Functions
 
-We have used function like below before:
+We have used a function like below before:
 
 ``` js
 
@@ -171,7 +171,7 @@ const colors = ['red' , 'green', 'blue'];
 const items = colors.map(color => `<li>${color}</li>`);
 ```
 
-The above code is pretty self explanatory. 
+The above code is pretty self-explanatory. 
 
 #### Spread Operator
 
@@ -185,7 +185,7 @@ const second = [4,5,6];
 const combined = first.concat(second);
 
 ``` 
-But if we can use a spread operator we can do that more easily and add anything before, between or after arrays like following:
+But if we can use a spread operator we can do that more easily and add anything before, between or after arrays like the following:
 
 ```js
 
@@ -220,7 +220,7 @@ console.log(person.name);
 
 #### Inheritance
 
-We can inherit the above class into another class by following code:
+We can inherit the above class into another class by the following code:
 
 ``` js
 
@@ -295,7 +295,7 @@ ___
 
 ## Adding Bootstrap
 
-First we need to install bootstrap using the terminal like below:
+First, we need to install bootstrap using the terminal like below:
 
 ``` shell
 
@@ -303,7 +303,7 @@ $ npm i bootstrap
 
 ``` 
 
-To import it in our `index.js` we will use the following code :
+To import it in our index.js we will use the following code :
 
 ``` js
 
@@ -315,7 +315,7 @@ ___
 
 ## Components
 
-The heart of React application is component. Component is a piece of UI. A tree of components makes a complete UI. In the root of the tree is the main component (App). A component is implemented as a JavaScript class with state and render. Here the **state** is where we store property values that belong to the component and **render** is to display the specified HTML code inside the specified HTML element.
+The heart of React application is a component. A component is a piece of UI. A tree of components makes a complete UI. In the root of the tree is the main component (App). A component is implemented as a JavaScript class with state and render. Here the **state** is where we store property values that belong to the component and **render** is to display the specified HTML code inside the specified HTML element.
 
 The structure of a simple component is like below:
 
@@ -389,7 +389,7 @@ Later we can pass this object in the render:
 
 ```
 
-We can also write inline style like below :
+We can also write an inline style like below :
 
 ``` js
 
@@ -403,14 +403,12 @@ We first initialize a list name `tags` in the `state` which looks like **tags: [
 
 ```js
 <ul>
-    {this.state.tags.map((tag) => (
-        <li key={tag}>{tag}</li>
-    ))}
-</ul>
+          {this.state.tags.map((tag) => (
+            <li key={tag}>{tag}</li>
+          ))}
+        </ul>
 ```
-
-Here `key={tag}` is used so that it can be uniquely identified. It shouldn’t have to be unique in the whole component but only in that list. 
-
+Here `key={tag}` is used so that it can be uniquely identified. It shouldn’t have to be unique in the whole component but only on that list. 
 
 #### Conditional Rendering
 
@@ -426,7 +424,7 @@ Here if the length is zero so which makes it true and when the first condition i
 
 ####   Handling Events & Binding Event Handlers
 
-Let's say we have a button and in click it will console.log a message like below:
+Let's say we have a button and in click, it will console.log a message like below:
 
 ``` js
 
@@ -441,7 +439,7 @@ handleIncrement() {
 
 ```
 
-In the above case there is a problem, we cannot use `this` to use it  we need to bind the event handler like below :
+In the above case, there is a problem, we cannot use `this` to use it  we need to bind the event handler like below :
 
 ``` js
 
@@ -456,7 +454,7 @@ In the above case there is a problem, we cannot use `this` to use it  we need to
 
 ```
 
-There is another way of doing that, we can simply convert into an arrow function as it does not rebind `this` function but inherit it. So the code will be like below :
+There is another way of doing that, we can simply convert it into an arrow function as it does not rebind `this` function but inherit it. So the code will be like below :
 
 ``` js
 
@@ -468,7 +466,7 @@ There is another way of doing that, we can simply convert into an arrow function
 
 #### Passing Event Arguments
 
-We can pass event arguments using following code:
+We can pass event arguments using the following code:
 
 
 ``` js
@@ -485,14 +483,8 @@ We can pass event arguments using following code:
   };
 
 ```
-
 In the place of `id : 1`, we can pass any parameter we want. 
-
 ___
 
-## Composing Components
-
-
-___
 
 
