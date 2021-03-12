@@ -490,6 +490,9 @@ In the place of `id : 1`, we can pass any parameter we want.
 
 ___
 
+## Composing Components
 
+
+___
 
 
