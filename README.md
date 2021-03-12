@@ -33,6 +33,7 @@ ___
 |[ES6](https://github.com/sayeemabdullah/React-Cribsheet#es6)|
 |[Adding Bootstrap](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#adding-bootstrap)|
 |[Components](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#components)|
+|[Composing Components]()|
 <!---|[]()|
 |[]()|
 |[]()|
@@ -484,6 +485,10 @@ We can pass event arguments using the following code:
 
 ```
 In the place of `id : 1`, we can pass any parameter we want. 
+___
+
+
+## Composing Components
 ___
 
 
