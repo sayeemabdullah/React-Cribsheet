@@ -33,7 +33,7 @@ ___
 |[ES6](https://github.com/sayeemabdullah/React-Cribsheet#es6)|
 |[Adding Bootstrap](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#adding-bootstrap)|
 |[Components](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#components)|
-|[Composing Components]()|
+|[Composing Components](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#composing-components)|
 <!---|[]()|
 |[]()|
 |[]()|
