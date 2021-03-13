@@ -529,7 +529,7 @@ state = {
 
 #### Props vs State
 
-Props include data we give to a component and State include data that is local or private to the component. React does not allow us to change any object in the props where State can be changed. 
+Props include data we give to a component and State include data that is local or private to the component. React does not allow us to modify any object in the props where State can be modified but only by the component which owns it. 
 
 #### Raising and Handling Events
 
