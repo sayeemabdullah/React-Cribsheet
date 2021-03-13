@@ -529,9 +529,47 @@ state = {
 
 #### Props vs State
 
-Props include data we give to a component and State include data that is local or private to the component. React does not allow us to modify any object in the props where State can be modified but only by the component which owns it. 
+**Props** include data we give to a component and **State** include data that is local or private to the component. React does not allow us to modify any object in the props where State can be modified but only by the component which owns it. 
 
 #### Raising and Handling Events
+
+Let’s say in `counter.jsx` there is a **button** that will **delete** a **value** from the **state** which is in `counters.jsx`. To do so we have to use `props` like below: 
+
+``` js
+
+// counter.jsx
+
+<button onClick={() => this.props.onDelete()}>Button</button>
+
+```
+
+``` js
+
+// counters.js
+
+handleDelete = () => {
+   // Code here
+  };
+
+  render() {
+    return (
+      <>
+        <div>
+          {this.state.counters.map((counter) => (
+            <Counter
+              key={counter.id}
+              value={counter.value}
+              selected={true}
+              onDelete={this.handleDelete}
+            ></Counter>
+          ))}
+        </div>
+      </>
+    );
+  }
+
+```
+
 
 ___
 
