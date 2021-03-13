@@ -568,6 +568,18 @@ handleDelete = () => {
 <button onClick={() => this.props.onDelete()}>Button</button>
 
 ```
+#### Updating the State
+
+To update the state we can use the following code:
+
+``` js
+ 
+ handleDelete = (counterId) => {
+    const counters = this.state.counters.filter((c) => c.id !== counterId);
+    this.setState({ counters });
+  };
+
+```
 
 ___
 
