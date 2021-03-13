@@ -537,14 +537,6 @@ Let’s say in `counter.jsx` there is a **button** that will **delete** a **valu
 
 ``` js
 
-// counter.jsx
-
-<button onClick={() => this.props.onDelete()}>Button</button>
-
-```
-
-``` js
-
 // counters.js
 
 handleDelete = () => {
@@ -569,7 +561,13 @@ handleDelete = () => {
   }
 
 ```
+``` js
 
+// counter.jsx
+
+<button onClick={() => this.props.onDelete()}>Button</button>
+
+```
 
 ___
 
