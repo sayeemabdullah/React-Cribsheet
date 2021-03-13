@@ -492,6 +492,41 @@ ___
 
 
 ## Composing Components
+
+#### Passing Data to Components
+
+We can pass data from one React component to another component using **props**. Let’s say we have a table in a component as shown below : 
+
+``` js
+// counters.jsx
+
+import Counter from "./counter";
+```
+``` js
+// counters.jsx
+
+{this.state.counters.map((counter) => (
+            <Counter
+              key={counter.id}
+              value={counter.value}
+              selected={true}
+            ></Counter>
+))}
+
+```
+
+We want to use `value` in another component name `counter.jsx`. If we want to use the values in the state we can use the following code :  
+
+``` js
+
+// counter.jsx
+
+state = {
+    value: this.props.value,
+  };
+
+```
+
 ___
 
 
