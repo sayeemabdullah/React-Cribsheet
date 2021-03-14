@@ -34,7 +34,7 @@ ___
 |[Adding Bootstrap](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#adding-bootstrap)|
 |[Components](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#components)|
 |[Composing Components](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#composing-components)|
-|[Lifecycle Hooks]()|
+|[Lifecycle Hooks](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#lifecycle-hooks)|
 <!---|[]()|
 |[]()|
 |[]()|
