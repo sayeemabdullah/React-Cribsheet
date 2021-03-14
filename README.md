@@ -619,7 +619,14 @@ const {onReset , onIncrement , onReset} = this.props;
 ```
 ___
 
+
 ## Lifecycle Hooks
+
+There are three phases:
+
+* Mounting Phase
+* Updating Phase
+* Unmounting Phase
 
 ___
 
