@@ -607,6 +607,16 @@ const NavBar = (props) => {
 
 ```
 
+#### Destructuring Arguments
+
+We can destruct arguments without using `props`. By adding const after **render** and before **return** like below:
+
+``` js
+
+const {onReset , onIncrement , onReset} = this.props;
+
+```
+
 
 ___
 
