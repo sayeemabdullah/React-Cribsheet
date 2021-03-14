@@ -582,6 +582,11 @@ To update the state we can use the following code:
 
 ```
 
+#### Controlled Component:
+
+A component that **does not have its local state** so it **receives data by props** and **raises events whenever data need to be changed**.
+
+
 ___
 
 
