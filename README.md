@@ -628,6 +628,9 @@ There are three phases:
 * Updating Phase
 * Unmounting Phase
 
+
+#### Mounting Phase
+
 ___
 
 
