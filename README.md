@@ -586,6 +586,27 @@ To update the state we can use the following code:
 
 A component that **does not have its local state** so it **receives data by props** and **raises events whenever data need to be changed**.
 
+#### Stateless Functional Components
+
+We can make components with function in the place of class. If we want to use props we have to pass it as a parameter. It will be something like this :
+
+``` js
+
+const NavBar = (props) => {
+  return (
+    <nav className="navbar navbar-light bg-light">
+      <a className="navbar-brand" href="#">
+        Navbar{" "}
+        <span className="badge badge-pill badge-secondary">
+          {props.totalCounters}
+        </span>
+      </a>
+    </nav>
+  );
+};
+
+```
+
 
 ___
 
