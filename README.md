@@ -628,10 +628,9 @@ There are three phases:
 * Updating Phase
 * Unmounting Phase
 
-
 #### Mounting Phase
 
-There are three life cycle hooks in this phrase which are `constructor`, `componentDidMount` and `render`. React will call these methods in order. 
+There are three life cycle hooks in this phrase which are `constructor`, `render` and `componentDidMount`. React will call these methods in order. 
 
 ##### constructor
 
@@ -647,13 +646,17 @@ When we use `constructor`, we have to call the parent class using `super();` Thi
 ```
 If we don’t pass `props` as a parameter it will show undefine. 
 
+##### render
+
+It is used to render components in the actual browser DOM.
+
 ##### componentDidMount
 
+This method is called after our component is rendered into the DOM. It is a perfect place to use **Ajax** and set state with data.
 
 
 
-
-
+###### N.B. We cannot use life cycle hooks in Stateless Functional Component.  
 ___
 
 
