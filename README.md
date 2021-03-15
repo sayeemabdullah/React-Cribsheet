@@ -619,7 +619,6 @@ const {onReset , onIncrement , onReset} = this.props;
 ```
 ___
 
-
 ## Lifecycle Hooks
 
 There are three phases:
@@ -654,10 +653,23 @@ It is used to render components in the actual browser DOM.
 
 This method is called after our component is rendered into the DOM. It is a perfect place to use **Ajax** and set state with data.
 
+#### Updating Phase
+
+This phase happens when the props or state of a component is changed. We have two life cycle hooks which are `render` and `componentDidUpdate`.  These two are called in order. 
+
+##### componentDidUpdate
+
+This method is called after a component is updated. In this method, we can make an ajax request to get data from the server and also compare props. 
 
 
-###### N.B. We cannot use life cycle hooks in Stateless Functional Component.  
+#### Unmounting Phase
+
+This is the last phase that happens when we remove a component from the DOM such as we delete a counter. We have one life cycle hook which is `componentWillUnmount`. 
+
+###### N.B. We cannot use life cycle hooks in Stateless Functional Component and there are more life cycle hooks but the given ones are most used. 
+
 ___
+
 
 
 
