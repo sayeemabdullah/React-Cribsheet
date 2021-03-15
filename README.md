@@ -631,6 +631,29 @@ There are three phases:
 
 #### Mounting Phase
 
+There are three life cycle hooks in this phrase which are `constructor`, `componentDidMount` and `render`. React will call these methods in order. 
+
+##### constructor
+
+When we use `constructor`, we have to call the parent class using `super();` This is called only once when the instance is created. If we want to set **state**, we can’t use `this.setState()`. We have to do like below:
+
+``` js
+
+  constructor(props) {
+    super(props);
+    this.state = this.props.something; 
+  }
+
+```
+If we don’t pass `props` as a parameter it will show undefine. 
+
+##### componentDidMount
+
+
+
+
+
+
 ___
 
 
