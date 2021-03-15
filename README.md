@@ -671,5 +671,8 @@ This is the last phase that happens when we remove a component from the DOM such
 ___
 
 
+## To get a better understanding we can always give the [React Doc](https://reactjs.org/docs/hello-world.html) a read. 
+
+___
 
 
