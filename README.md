@@ -320,9 +320,14 @@ ___
 
 ## Components
 
-The heart of React application is a component. A component is a piece of UI. A tree of components makes a complete UI. In the root of the tree is the main component (App). A component is implemented as a JavaScript class with state and render. Here the **state** is where we store property values that belong to the component and **render** is to display the specified HTML code inside the specified HTML element.
+The heart of React application is a component. A component is a piece of UI. A tree of components makes a complete UI. In the root of the tree is the main component (App). There are two types of component types. 
 
-The structure of a simple component is like below:
+Stateless Functional Component
+Stateful Class Component
+
+A **Stateless Functional Component** is just another javascript function and on the other hand a **Stateful Class Component** is implemented as a JavaScript class with state and render. Here the **state** is where we store property values that belong to the component and **render** is to display the specified HTML code inside the specified HTML element.
+
+The structure of a simple stateful class component is like below:
 
 ``` js 
 
@@ -373,7 +378,7 @@ const { count } = this.state;
 
 ```
 
-We can implement `styles` in our component by adding property lets call it **style** like below:
+We can implement `styles` in our component by adding property let’s call it **style** like below:
 
 ``` js
 
@@ -674,5 +679,7 @@ ___
 ## To get a better understanding we can always give the [React Doc](https://reactjs.org/docs/hello-world.html) a read. 
 
 ___
+
+
 
 
