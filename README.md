@@ -29,6 +29,7 @@ ___
 |Topics|
 |---|
 |[Creating & Starting Application](https://github.com/sayeemabdullah/React-Cribsheet#creating--starting-application)|
+|[How things works?]()|
 |[Hello World!](https://github.com/sayeemabdullah/React-Cribsheet#hello-world)|
 |[ES6](https://github.com/sayeemabdullah/React-Cribsheet#es6)|
 |[Adding Bootstrap](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#adding-bootstrap)|
@@ -71,6 +72,8 @@ $ npm start
 After starting our project we will see **node_modules** which there are 3rd party libraries and react itself, **public** for public assets and **src** for basic components. 
 
 To see the conversion of modern javascript to browser-compatible JavaScript we can use [Babel](https://babeljs.io/).
+
+___
 
 ## How things works?
 
