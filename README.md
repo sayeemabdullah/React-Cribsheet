@@ -77,7 +77,7 @@ ___
 
 ## How things works?
 
-After creating the application we will see `index.html` under **public** folder so here where the magic happens. When you run your application it runs only this file. Inside this file we will find a single `div` like below: 
+After creating the application we will find `index.html` under **public** folder so here where the magic happens. When we run our application it runs only this file. Inside this file we will find a single `div` like below: 
 
 ``` html
 
