@@ -29,6 +29,7 @@ ___
 |Topics|
 |---|
 |[Creating & Starting Application](https://github.com/sayeemabdullah/React-Cribsheet#creating--starting-application)|
+|[How things works?]()|
 |[Hello World!](https://github.com/sayeemabdullah/React-Cribsheet#hello-world)|
 |[ES6](https://github.com/sayeemabdullah/React-Cribsheet#es6)|
 |[Adding Bootstrap](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#adding-bootstrap)|
@@ -72,6 +73,32 @@ After starting our project we will see **node_modules** which there are 3rd part
 
 To see the conversion of modern javascript to browser-compatible JavaScript we can use [Babel](https://babeljs.io/).
 
+___
+
+## How things works?
+
+After creating the application we will see `index.html` under **public** folder so here where the magic happens. When you run your application it runs only this file. Inside this file we will find a single `div` like below: 
+
+``` html
+
+<div id="root"></div>
+
+``` 
+
+So it renders the div whose id is root. Now if we go to the `index.js` file under **src** we will find the following snippet of code:
+
+``` js
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+```
+
+So here it throws all the things inside **App** component to the div whose id is root. Now inside `App.js` file we can add more components or write code there which will be rendered accordingly. 
 
 ___
 
@@ -320,12 +347,12 @@ ___
 
 ## Components
 
-The heart of React application is a component. A component is a piece of UI. A tree of components makes a complete UI. In the root of the tree is the main component (App). There are two types of component. 
+The heart of React application is a component. A component is a piece of UI. A tree of components makes a complete UI. In the root of the tree is the main component (App). There are two types of component types. 
 
-1. **Stateless Functional Component**
-2. **Stateful Class Component**
+Stateless Functional Component
+Stateful Class Component
 
-A **Stateless Functional Component** is just another javascript function and on the other hand a **Stateful Class Component** is implemented as a JavaScript class with state and render. Here the **state** is where we store property values that belong to the component and **render** is to display the specified HTML code inside the specified HTML element.
+A **Stateless Functional Component** is just another javascript function and on the other hand, a **Stateful Class Component** is implemented as a JavaScript class with state and render. Here the **state** is where we store property values that belong to the component and **render** is to display the specified HTML code inside the specified HTML element.
 
 The structure of a simple stateful class component is like below:
 
