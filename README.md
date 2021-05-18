@@ -29,7 +29,6 @@ ___
 |Topics|
 |---|
 |[Creating & Starting Application](https://github.com/sayeemabdullah/React-Cribsheet#creating--starting-application)|
-|[How things works?](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#how-things-works)|
 |[Hello World!](https://github.com/sayeemabdullah/React-Cribsheet#hello-world)|
 |[ES6](https://github.com/sayeemabdullah/React-Cribsheet#es6)|
 |[Adding Bootstrap](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#adding-bootstrap)|
@@ -73,11 +72,9 @@ After starting our project we will see **node_modules** which there are 3rd part
 
 To see the conversion of modern javascript to browser-compatible JavaScript we can use [Babel](https://babeljs.io/).
 
-___
-
 ## How things works?
 
-After creating the application we will find `index.html` under **public** folder so here where the magic happens. When we run our application it runs only this file. Inside this file we will find a single `div` like below: 
+After creating the application we will see `index.html` under **public** folder so here where the magic happens. When you run your application it runs only this file. Inside this file we will find a single `div` like below: 
 
 ``` html
 
@@ -706,7 +703,3 @@ ___
 ## To get a better understanding we can always give the [React Doc](https://reactjs.org/docs/hello-world.html) a read. 
 
 ___
-
-
-
-
