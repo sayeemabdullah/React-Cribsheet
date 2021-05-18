@@ -439,7 +439,7 @@ We can also write an inline style like below :
 We first initialize a list name `tags` in the `state` which looks like **tags: ["tag1", "tag2", "tag3"]**. We can render it by the following code:
 
 ```js
-<ul>
+        <ul>
           {this.state.tags.map((tag) => (
             <li key={tag}>{tag}</li>
           ))}
