@@ -387,7 +387,7 @@ export default App;
 
 And on the other hand, a **Stateful Class Component** is implemented as a JavaScript class with state and render. Here the **state** is where we store property values that belong to the component and **render** is to display the specified HTML code inside the specified HTML element.
 
-The structure of a simple stateful class component is like below:
+The structure of a simple stateful class component is as shown below:
 
 ``` js 
 
@@ -404,7 +404,7 @@ export default Name;
 
 ```
 
-Something to remember that when we render elements there should be one parent element like `html <div></div>` as shown below: 
+Something to remember that when we render elements there should be one parent element like `<div></div>` as shown below: 
 
 ``` js
 
@@ -424,7 +424,7 @@ class Counter extends Component {
 export default Counter;
 
 ```
-If we don’t want to use `<div></div>` or any other element we can use `<React.Fragment></React.Fragment>` as parent. In our **render()** we can call function using **curly brackets** like below :
+If we don’t want to use `<div></div>` or any other element and we can use `<React.Fragment></React.Fragment>` as parent or just `<></>` will work too . In our **render()** we can call function using **curly brackets** like below :
 
 ``` js
 <span>{this.justAnotherFunction()}</span>
