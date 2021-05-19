@@ -366,7 +366,24 @@ export default Greet;
 
 ```
 
-So here we have exported our function and which can be later called in any other component. 
+So here we have exported our function and which can be later called in any other component. We have called **Greet** in `App.js` as shown below:
+
+``` js
+
+import "./App.css";
+import Greet from "./components/Greet";
+
+function App() {
+  return (
+    <div className="App">
+      <Greet></Greet>
+    </div>
+  );
+}
+
+export default App;
+
+``` 
 
 And on the other hand, a **Stateful Class Component** is implemented as a JavaScript class with state and render. Here the **state** is where we store property values that belong to the component and **render** is to display the specified HTML code inside the specified HTML element.
 
@@ -722,8 +739,3 @@ ___
 > ##### To get a better understanding we can always give the [React Doc](https://reactjs.org/docs/hello-world.html) a read. 
 
 ___
-
-
-
-
-
