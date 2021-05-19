@@ -29,7 +29,7 @@ ___
 |Topics|
 |---|
 |[Creating & Starting Application](https://github.com/sayeemabdullah/React-Cribsheet#creating--starting-application)|
-|[How things works?](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#how-things-works)|
+|[How things work?](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#how-things-work)|
 |[Hello World!](https://github.com/sayeemabdullah/React-Cribsheet#hello-world)|
 |[ES6](https://github.com/sayeemabdullah/React-Cribsheet#es6)|
 |[Adding Bootstrap](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#adding-bootstrap)|
@@ -75,7 +75,7 @@ To see the conversion of modern javascript to browser-compatible JavaScript we c
 
 ___
 
-## How things works?
+## How things work?
 
 After creating the application we will find `index.html` under **public** folder so here where the magic happens. When you run your application it runs only this file. Inside this file we will find a single `div` like below: 
 
@@ -98,7 +98,7 @@ ReactDOM.render(
 
 ```
 
-So here it throws all the things inside **App** component to the div whose id is root. Now inside `App.js` file we can add more components or write code there which will be rendered accordingly but we can also print or code without using `App.js` which is shown below in the [**Hello World**](https://github.com/sayeemabdullah/React-Cribsheet#hello-world) section. 
+So here it throws all the things inside **App** component to the div whose id is root. Now inside the `App.js` file we can add more components or write code there which will be rendered accordingly but we can also print or code without using `App.js` which is shown below in the [**Hello World**](https://github.com/sayeemabdullah/React-Cribsheet#hello-world) section. 
 
 ___
 
