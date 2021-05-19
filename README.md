@@ -98,7 +98,7 @@ ReactDOM.render(
 
 ```
 
-So here it throws all the things inside **App** component to the div whose id is root. Now inside `App.js` file we can add more components or write code there which will be rendered accordingly. 
+So here it throws all the things inside **App** component to the div whose id is root. Now inside `App.js` file we can add more components or write code there which will be rendered accordingly but we can also print or code without using `App.js` which is shown below in the [**Hello World**](https://github.com/sayeemabdullah/React-Cribsheet#hello-world) section. 
 
 ___
 
@@ -706,3 +706,6 @@ ___
 ## To get a better understanding we can always give the [React Doc](https://reactjs.org/docs/hello-world.html) a read. 
 
 ___
+
+
+
