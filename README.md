@@ -150,7 +150,7 @@ const person = {
 
 ```
 
-To access the members we can use `person.talk()` or `person[‘name’] = ‘Abdullah’`. 
+To access the members we can use `person.walk()` and `person[‘name’] = ‘Abdullah’`. 
 
 We can extract the properties like the below code without going the traditional way:
 
