@@ -352,7 +352,23 @@ The heart of React application is a component. A component is a piece of UI. A t
 * **Stateless Functional Component**
 * **Stateful Class Component**
 
-A **Stateless Functional Component** is just another javascript function and on the other hand, a **Stateful Class Component** is implemented as a JavaScript class with state and render. Here the **state** is where we store property values that belong to the component and **render** is to display the specified HTML code inside the specified HTML element.
+A **Stateless Functional Component** is just another javascript function which is shown below:
+
+``` js
+
+import React from "react";
+
+function Greet() {
+  return <h1>Hello World!</h1>;
+}
+
+export default Greet;
+
+```
+
+So here we have exported our function and which can be later called in any other component. 
+
+And on the other hand, a **Stateful Class Component** is implemented as a JavaScript class with state and render. Here the **state** is where we store property values that belong to the component and **render** is to display the specified HTML code inside the specified HTML element.
 
 The structure of a simple stateful class component is like below:
 
