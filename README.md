@@ -349,8 +349,8 @@ ___
 
 The heart of React application is a component. A component is a piece of UI. A tree of components makes a complete UI. In the root of the tree is the main component (App). There are two types of component types. 
 
-  1. **Stateless Functional Component**
-  2. **Stateful Class Component**
+* **Stateless Functional Component**
+* **Stateful Class Component**
 
 A **Stateless Functional Component** is just another javascript function and on the other hand, a **Stateful Class Component** is implemented as a JavaScript class with state and render. Here the **state** is where we store property values that belong to the component and **render** is to display the specified HTML code inside the specified HTML element.
 
