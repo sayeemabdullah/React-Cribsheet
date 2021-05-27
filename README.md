@@ -618,16 +618,16 @@ ___
 
 ## Props
 
-**Props** include data we give to a component or in simpiler word we pass data fromone component to another using **props**. 
+**Props** include data we give to a component or in a simpler word we pass data from one component to another using **props**. 
 
-So lets say we want to send my name which is **Sayeem** to a component as props so that it says “Hello Sayeem!”.  There is a component name `Greet`. So first to send my name from the parent **(App.js)** to child **(Greet.js)** like below:
+So let’s say we want to send my name which is **Sayeem** to a component as props so that it says “Hello Sayeem!”.  There is a component name `Greet`. So first to send my name from the parent **(App.js)** to child **(Greet.js)** like below:
 
 ``` js
 
  <Greet name="Sayeem"></Greet>
 
 ```
-And in the `Greet.js` we will use the following code to catch the name and pint:
+And in the `Greet.js` we will use the following code to catch the name and print:
 
 ``` js
 
@@ -643,6 +643,7 @@ export default Greet;
 
 ``` 
 
+Here we are using curly brackets to print the props. 
 
 ___
 
@@ -777,8 +778,3 @@ ___
 > ##### To get a better understanding we can always give the [React Doc](https://reactjs.org/docs/hello-world.html) a read. 
 
 ___
-
-
-
-
-
