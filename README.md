@@ -610,8 +610,54 @@ state = {
 ```
 ___
 
+## JSX
 
-## Props vs State
+JSX is JavaScript XML which is an extension to the javascript language syntax. It is not mandatory to use JSX in React but it makes our code easier and simpler. A simple **Hello World!** code inside a `h1` tag will be something like this:
+
+``` js
+
+import React from "react";
+
+const Hello = () => {
+  return (
+    <>
+      <h1>Hello World!</h1>
+    </>
+  );
+};
+
+export default Hello;
+
+```
+And if we want to recode the component without using JSX. It will look something like this:
+
+``` js
+
+import React from "react";
+
+const Hello = () => {
+  return React.createElement(
+    "div",
+    null,
+    React.createElement("h1", null, "Hello World!")
+  );
+};
+
+export default Hello;
+
+```
+
+In the place of **null** we can assign **class** or **id** using a second bracket eg. `{id : ‘dummyId’ , className:‘dummyClass’}`. 
+
+___
+
+## Props
+
+___
+
+
+
+## State
 
 **Props** include data we give to a component and **State** include data that is local or private to the component. React does not allow us to modify any object in the props where State can be modified but only by the component which owns it. 
 
@@ -674,13 +720,15 @@ ___
 
 ## Destructuring Arguments
 
-We can destruct arguments without using `props`. By adding const after **render** and before **return** like below:
+We can destruct arguments by adding const after **render** and before **return** like below:
 
 ``` js
 
 const {onReset , onIncrement , onReset} = this.props;
 
 ```
+
+So we don’t need to use **this** every time while using the variables in the code. 
 ___
 
 ## Lifecycle Hooks
@@ -738,6 +786,3 @@ ___
 > ##### To get a better understanding we can always give the [React Doc](https://reactjs.org/docs/hello-world.html) a read. 
 
 ___
-
-
-
