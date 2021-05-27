@@ -34,7 +34,15 @@ ___
 |[ES6](https://github.com/sayeemabdullah/React-Cribsheet#es6)|
 |[Adding Bootstrap](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#adding-bootstrap)|
 |[Components](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#components)|
-|[Composing Components](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#composing-components)|
+|[Rendering Lists](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#rendering-lists)|
+|[Conditional Rendering](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#conditional-rendering)|
+|[Handling Events & Binding Event Handlers](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#handling-events--binding-event-handlers)|
+|[Passing Event Arguments](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#passing-event-arguments)|
+|[Passing Data to Components](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#passing-data-to-components)|
+|[Props]()|
+|[State]()|
+|[Raising and Handling Events](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#raising-and-handling-events)|
+|[Destructuring Arguments](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#destructuring-arguments)|
 |[Lifecycle Hooks](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#lifecycle-hooks)|
 <!---|[]()|
 |[]()|
