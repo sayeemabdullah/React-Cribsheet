@@ -466,8 +466,9 @@ We can also write an inline style like below :
 <span style={{ fontSize: 50, fontWeight: "bold" }}>{this.justAnotherFunction()}</span>
 
 ```
+___
 
-#### Rendering Lists 
+## Rendering Lists 
 
 We first initialize a list name `tags` in the `state` which looks like **tags: ["tag1", "tag2", "tag3"]**. We can render it by the following code:
 
@@ -480,7 +481,10 @@ We first initialize a list name `tags` in the `state` which looks like **tags: [
 ```
 Here `key={tag}` is used so that it can be uniquely identified. It shouldn’t have to be unique in the whole component but only on that list. 
 
-#### Conditional Rendering
+___
+
+
+## Conditional Rendering
 
 We can use logical & operator for conditional rendering like the code below:
 
@@ -491,8 +495,10 @@ We can use logical & operator for conditional rendering like the code below:
 ```
 Here if the length is zero so which makes it true and when the first condition is true it prints the second condition. If there are 3 conditions or more then it will execute the last condition.
 
+___
 
-####   Handling Events & Binding Event Handlers
+
+##   Handling Events & Binding Event Handlers
 
 Let's say we have a button and in click, it will console.log a message like below:
 
@@ -534,7 +540,10 @@ There is another way of doing that, we can simply convert it into an arrow funct
 
 ```
 
-#### Passing Event Arguments
+___
+
+
+## Passing Event Arguments
 
 We can pass event arguments using the following code:
 
@@ -554,12 +563,10 @@ We can pass event arguments using the following code:
 
 ```
 In the place of `id : 1`, we can pass any parameter we want. 
+
 ___
 
-
-## Composing Components
-
-#### Passing Data to Components
+## Passing Data to Components
 
 We can pass data from one React component to another component using **props**. Let’s say we have a table in a component as shown below : 
 
@@ -592,12 +599,17 @@ state = {
   };
 
 ```
+___
 
-#### Props vs State
+
+## Props vs State
 
 **Props** include data we give to a component and **State** include data that is local or private to the component. React does not allow us to modify any object in the props where State can be modified but only by the component which owns it. 
 
-#### Raising and Handling Events
+
+___
+
+## Raising and Handling Events
 
 Let’s say in `counter.jsx` there is a **button** that will **delete** a **value** from the **state** which is in `counters.jsx`. To do so we have to use `props` like below: 
 
@@ -648,7 +660,10 @@ To update the state we can use the following code:
 
 ```
 
-#### Destructuring Arguments
+___
+
+
+## Destructuring Arguments
 
 We can destruct arguments without using `props`. By adding const after **render** and before **return** like below:
 
@@ -714,3 +729,6 @@ ___
 > ##### To get a better understanding we can always give the [React Doc](https://reactjs.org/docs/hello-world.html) a read. 
 
 ___
+
+
+
