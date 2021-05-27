@@ -675,14 +675,14 @@ const Greet = (props) => {
 export default Greet;
 
 ```
+
+If we want to pass data using props almost everything remains the same but in the child component we have to use the `this` keyword before props eg. this.props.name. 
+
 ___
-
-
 
 ## State
 
 **State** include data that is local or private to the component and can be modified but only by the component which owns it. 
-
 
 ___
 
@@ -808,8 +808,3 @@ ___
 > ##### To get a better understanding we can always give the [React Doc](https://reactjs.org/docs/hello-world.html) a read. 
 
 ___
-
-
-
-
-
