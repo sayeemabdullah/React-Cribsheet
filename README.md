@@ -41,7 +41,6 @@ ___
 |[JSX](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#jsx)|
 |[Props](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#props)|
 |[State](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#state)|
-|[Raising and Handling Events](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#raising-and-handling-events)|
 |[Destructuring Arguments](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#destructuring-arguments)|
 |[Lifecycle Hooks](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#lifecycle-hooks)|
 <!---|[]()|
@@ -492,89 +491,6 @@ Here `key={tag}` is used so that it can be uniquely identified. It shouldn’t h
 ___
 
 
-## Conditional Rendering
-
-We can use logical & operator for conditional rendering like the code below:
-
-``` js
-
-{this.state.tags.length === 0 && "No tags here!"}
-
-```
-Here if the length is zero so which makes it true and when the first condition is true it prints the second condition. If there are 3 conditions or more then it will execute the last condition.
-
-___
-
-
-##   Handling Events & Binding Event Handlers
-
-Let's say we have a button and in click, it will console.log a message like below:
-
-``` js
-
-<button onClick={this.handleIncrement}>Click Here</button>
-
-```
-``` js
-
-handleIncrement() {
-    console.log("Increment Clicked!");
-  }
-
-```
-
-In the above case, there is a problem, we cannot use `this` to use it  we need to bind the event handler like below :
-
-``` js
-
-  constructor() {
-    super();
-    this.handleIncrement = this.handleIncrement.bind(this);
-  }
-
-  handleIncrement() {
-    console.log("Increment Clicked!", this);
-  }
-
-```
-
-There is another way of doing that, we can simply convert it into an arrow function as it does not rebind `this` function but inherit it. So the code will be like below :
-
-``` js
-
- handleIncrement = () => {
-    console.log("Increment Clicked!", this);
-  };
-
-```
-
-___
-
-
-## Passing Event Arguments
-
-We can pass event arguments using the following code:
-
-
-``` js
-
-<button onClick={() => this.handleIncrement({ id: 1 })} > </button> 
-
-```
-
-``` js
-
-  handleIncrement = (product) => {
-    console.log(product);
-    this.setState({ count: this.state.count + 1 });
-  };
-
-```
-In the place of `id : 1`, we can pass any parameter we want. 
-
-___
-
-
 ## JSX
 
 JSX is JavaScript XML which is an extension to the javascript language syntax. It is not mandatory to use JSX in React but it makes our code easier and simpler. A simple **Hello World!** code inside a `h1` tag will be something like this:
@@ -686,59 +602,6 @@ ___
 
 ___
 
-## Raising and Handling Events
-
-Let’s say in `counter.jsx` there is a **button** that will **delete** a **value** from the **state** which is in `counters.jsx`. To do so we have to use `props` like below: 
-
-``` js
-
-// counters.js
-
-handleDelete = () => {
-   // Code here
-  };
-
-  render() {
-    return (
-      <>
-        <div>
-          {this.state.counters.map((counter) => (
-            <Counter
-              key={counter.id}
-              id={counter.id}
-              value={counter.value}
-              selected={true}
-              onDelete={this.handleDelete}
-            ></Counter>
-          ))}
-        </div>
-      </>
-    );
-  }
-
-```
-``` js
-
-// counter.jsx
-
-<button onClick={() => this.props.onDelete()}>Button</button>
-
-```
-#### Updating the State
-
-To update the state we can use the following code:
-
-``` js
- 
- handleDelete = (counterId) => {
-    const counters = this.state.counters.filter((c) => c.id !== counterId);
-    this.setState({ counters });
-  };
-
-```
-
-___
-
 
 ## Destructuring Arguments
 
@@ -751,7 +614,67 @@ const {onReset , onIncrement , onReset} = this.props;
 ```
 
 So we don’t need to use **this** every time while using the variables in the code. 
+
 ___
+
+## Conditional Rendering
+
+We can use logical & operator for conditional rendering like the code below:
+
+``` js
+
+{this.state.tags.length === 0 && "No tags here!"}
+
+```
+Here if the length is zero so which makes it true and when the first condition is true it prints the second condition. If there are 3 conditions or more then it will execute the last condition.
+
+___
+
+
+##   Handling Events & Binding Event Handlers
+
+Let's say we have a button and in click, it will console.log a message like below:
+
+``` js
+
+<button onClick={this.handleIncrement}>Click Here</button>
+
+```
+``` js
+
+handleIncrement() {
+    console.log("Increment Clicked!");
+  }
+
+```
+
+In the above case, there is a problem, we cannot use `this` to use it  we need to bind the event handler like below :
+
+``` js
+
+  constructor() {
+    super();
+    this.handleIncrement = this.handleIncrement.bind(this);
+  }
+
+  handleIncrement() {
+    console.log("Increment Clicked!", this);
+  }
+
+```
+
+There is another way of doing that, we can simply convert it into an arrow function as it does not rebind `this` function but inherit it. So the code will be like below :
+
+``` js
+
+ handleIncrement = () => {
+    console.log("Increment Clicked!", this);
+  };
+
+```
+
+___
+
 
 ## Lifecycle Hooks
 
@@ -808,3 +731,8 @@ ___
 > ##### To get a better understanding we can always give the [React Doc](https://reactjs.org/docs/hello-world.html) a read. 
 
 ___
+
+
+
+
+
