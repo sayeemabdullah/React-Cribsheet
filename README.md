@@ -39,9 +39,9 @@ ___
 |[Handling Events & Binding Event Handlers](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#handling-events--binding-event-handlers)|
 |[Passing Event Arguments](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#passing-event-arguments)|
 |[Passing Data to Components](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#passing-data-to-components)|
-|[JSX]()|
-|[Props]()|
-|[State]()|
+|[JSX](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#jsx)|
+|[Props](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#props)|
+|[State](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#state)|
 |[Raising and Handling Events](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#raising-and-handling-events)|
 |[Destructuring Arguments](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#destructuring-arguments)|
 |[Lifecycle Hooks](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#lifecycle-hooks)|
@@ -653,13 +653,15 @@ ___
 
 ## Props
 
+**Props** include data we give to a component and React does not allow us to modify any object in the props .
+
 ___
 
 
 
 ## State
 
-**Props** include data we give to a component and **State** include data that is local or private to the component. React does not allow us to modify any object in the props where State can be modified but only by the component which owns it. 
+**State** include data that is local or private to the component and can be modified but only by the component which owns it. 
 
 
 ___
