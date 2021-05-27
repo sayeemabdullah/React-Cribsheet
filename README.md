@@ -475,21 +475,6 @@ We can also write an inline style like below :
 ```
 ___
 
-## Rendering Lists 
-
-We first initialize a list name `tags` in the `state` which looks like **tags: ["tag1", "tag2", "tag3"]**. We can render it by the following code:
-
-```js
-        <ul>
-          {this.state.tags.map((tag) => (
-            <li key={tag}>{tag}</li>
-          ))}
-        </ul>
-```
-Here `key={tag}` is used so that it can be uniquely identified. It shouldn’t have to be unique in the whole component but only on that list. 
-
-___
-
 
 ## JSX
 
@@ -617,6 +602,23 @@ So we don’t need to use **this** every time while using the variables in the c
 
 ___
 
+
+## Rendering Lists 
+
+We first initialize a list name `tags` in the `state` which looks like **tags: ["tag1", "tag2", "tag3"]**. We can render it by the following code:
+
+```js
+        <ul>
+          {this.state.tags.map((tag) => (
+            <li key={tag}>{tag}</li>
+          ))}
+        </ul>
+```
+Here `key={tag}` is used so that it can be uniquely identified. It shouldn’t have to be unique in the whole component but only on that list. 
+
+___
+
+
 ## Conditional Rendering
 
 We can use logical & operator for conditional rendering like the code below:
@@ -731,8 +733,3 @@ ___
 > ##### To get a better understanding we can always give the [React Doc](https://reactjs.org/docs/hello-world.html) a read. 
 
 ___
-
-
-
-
-
