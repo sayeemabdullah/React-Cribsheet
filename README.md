@@ -38,7 +38,6 @@ ___
 |[Conditional Rendering](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#conditional-rendering)|
 |[Handling Events & Binding Event Handlers](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#handling-events--binding-event-handlers)|
 |[Passing Event Arguments](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#passing-event-arguments)|
-|[Passing Data to Components](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#passing-data-to-components)|
 |[JSX](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#jsx)|
 |[Props](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#props)|
 |[State](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#state)|
@@ -575,40 +574,6 @@ In the place of `id : 1`, we can pass any parameter we want.
 
 ___
 
-## Passing Data to Components
-
-We can pass data from one React component to another component using **props**. Let’s say we have a table in a component as shown below : 
-
-``` js
-// counters.jsx
-
-import Counter from "./counter";
-```
-``` js
-// counters.jsx
-
-{this.state.counters.map((counter) => (
-            <Counter
-              key={counter.id}
-              value={counter.value}
-              selected={true}
-            ></Counter>
-))}
-
-```
-
-We want to use `value` in another component name `counter.jsx`. If we want to use the values in the state we can use the following code :  
-
-``` js
-
-// counter.jsx
-
-state = {
-    value: this.props.value,
-  };
-
-```
-___
 
 ## JSX
 
@@ -653,7 +618,31 @@ ___
 
 ## Props
 
-**Props** include data we give to a component and React does not allow us to modify any object in the props .
+**Props** include data we give to a component or in simpiler word we pass data fromone component to another using **props**. 
+
+So lets say we want to send my name which is **Sayeem** to a component as props so that it says “Hello Sayeem!”.  There is a component name `Greet`. So first to send my name from the parent **(App.js)** to child **(Greet.js)** like below:
+
+``` js
+
+ <Greet name="Sayeem"></Greet>
+
+```
+And in the `Greet.js` we will use the following code to catch the name and pint:
+
+``` js
+
+import React from "react";
+
+const Greet = (props) => {
+  console.log(props);
+  return <h1>Hello {props.name}!</h1>;
+};
+
+export default Greet;
+
+
+``` 
+
 
 ___
 
@@ -788,3 +777,8 @@ ___
 > ##### To get a better understanding we can always give the [React Doc](https://reactjs.org/docs/hello-world.html) a read. 
 
 ___
+
+
+
+
+
