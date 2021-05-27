@@ -643,8 +643,38 @@ export default Greet;
 
 ``` 
 
-Here we are using curly brackets to print the props. 
+Here we are using curly brackets to print the props. Even we can send and print multiple props like below:
 
+``` js
+
+// App.js
+
+      <Greet name="Sayeem" superheroName="Ironman">
+        Just Joking!
+      </Greet>
+
+```
+``` js
+
+// Greet.js
+
+import React from "react";
+
+const Greet = (props) => {
+  console.log(props);
+  return (
+    <>
+      <h1>
+        Hello {props.name} a.k.a {props.superheroName}!
+      </h1>
+      <p>{props.children}</p>
+    </>
+  );
+};
+
+export default Greet;
+
+```
 ___
 
 
