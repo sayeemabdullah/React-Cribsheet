@@ -34,14 +34,13 @@ ___
 |[ES6](https://github.com/sayeemabdullah/React-Cribsheet#es6)|
 |[Adding Bootstrap](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#adding-bootstrap)|
 |[Components](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#components)|
-|[Rendering Lists](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#rendering-lists)|
-|[Conditional Rendering](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#conditional-rendering)|
-|[Handling Events & Binding Event Handlers](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#handling-events--binding-event-handlers)|
-|[Passing Event Arguments](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#passing-event-arguments)|
 |[JSX](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#jsx)|
 |[Props](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#props)|
 |[State](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#state)|
 |[Destructuring Arguments](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#destructuring-arguments)|
+|[Rendering Lists](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#rendering-lists)|
+|[Conditional Rendering](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#conditional-rendering)|
+|[Handling Events & Binding Event Handlers](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#handling-events--binding-event-handlers)|
 |[Lifecycle Hooks](https://github.com/sayeemabdullah/React-Cribsheet/blob/main/README.md#lifecycle-hooks)|
 <!---|[]()|
 |[]()|
