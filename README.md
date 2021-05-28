@@ -582,8 +582,7 @@ ___
 
 ## State
 
-**State** include data that is local or private to the component and can be modified but only by the component which owns it. 
-
+**State** is managed within the component where the variable are not passed but declared in the function body. A state can be changed. In the functional component, a state can be accessed using **useState hooks** and on the other hand **this.state** is used to access in the class components.  
 ___
 
 
@@ -732,3 +731,6 @@ ___
 > ##### To get a better understanding we can always give the [React Doc](https://reactjs.org/docs/hello-world.html) a read. 
 
 ___
+
+
+
