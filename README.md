@@ -7,8 +7,8 @@ Before starting React we have to download and install **Node js** and **NPM**. I
 
 ``` shell
 
-$ sudo apt install nodejs
-$ sudo apt install npm
+apt install nodejs
+apt install npm
 
 ```
 
@@ -16,7 +16,7 @@ After that we can use the below command to install the package which will create
 
 ``` shell
 
-$sudo npm i -g create-react-app
+npm i -g create-react-app
 
 ```
 
@@ -61,7 +61,7 @@ To create our app we have to first go to our desired folder and use the below co
 
 ``` shell
 
-$ npx create-react-app react-app
+npx create-react-app name-of-our-project
 
 ```
 
@@ -69,7 +69,7 @@ And now to start our project we will use the following command after going to ou
 
 ``` shell
 
-$ npm start
+npm start
 
 ```
 
