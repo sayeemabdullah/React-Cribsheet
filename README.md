@@ -669,7 +669,7 @@ export default store;
 
 As we have seen before now we will pass another parameter with `rootReducer`. So we will pass `applyMiddleware` where our middleware is `thunk`.
 
-**So what is Redux Thunk do?**
+**So what does Redux Thunk do?**
 
 > Redux Thunk middleware allows you to write action creators that return a function instead of an action. The thunk can be used to delay the dispatch of action or to dispatch only if a certain condition is met. The inner function receives the store methods dispatch and getState as parameters.
 
@@ -766,10 +766,3 @@ export default connect(mapStateToProps, mapDispatchToProps)(UserContainer);
 ```
 I believe if we followed through the whole cribsheet and know react, the above code is pretty self-explanatory. 
 ___
-
-
-
-
-
-
-
