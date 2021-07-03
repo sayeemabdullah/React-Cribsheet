@@ -645,7 +645,7 @@ ___
 
 ## Redux Thunk Get Request
 
-Before starting making our store we will install two libraries `axios` and `redux-thunk`. To do so we will write the below command in our terminal:
+Before starting making our store we will install two libraries `axios` and [`redux-thunk`](). To do so we will write the below command in our terminal:
 
 ``` shell
 
@@ -667,6 +667,18 @@ export default store;
 
 ```
 
+As we have seen before now we will pass another parameter with `rootReducer`. So we will pass `applyMiddleware` where our middleware is `thunk`.
+
+**So what is Redux Thunk do?**
+
+> Redux Thunk middleware allows you to write action creators that return a function instead of an action. The thunk can be used to delay the dispatch of action or to dispatch only if a certain condition is met. The inner function receives the store methods dispatch and getState as parameters.
 
 
 ___
+
+
+
+
+
+
+
