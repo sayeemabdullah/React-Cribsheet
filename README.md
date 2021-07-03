@@ -537,7 +537,7 @@ ___
 
 ## Async Actions
 
-First we will define ur user types inside our `userTypes` as below:
+First, we will define our user types inside our `userTypes` as below:
 
 ``` js
 
@@ -619,7 +619,7 @@ export default reducer;
 
 ``` 
 
-In `index.js` inside `redux` folder we will export all the actions:
+In `index.js` inside the `redux` folder we will export all the actions:
 
 ``` js
 
@@ -643,3 +643,9 @@ export default rootReducer;
 ```
 
 ___
+
+
+
+
+
+
