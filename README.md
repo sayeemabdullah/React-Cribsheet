@@ -764,5 +764,5 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(mapStateToProps, mapDispatchToProps)(UserContainer);
 
 ```
-I believe if we follow through the whole cribsheet and know react, the above code is pretty self-explanatory. 
+I believe if we followed through the whole cribsheet and know react, the above code is pretty self-explanatory. 
 ___
