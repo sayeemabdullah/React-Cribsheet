@@ -645,9 +645,28 @@ ___
 
 ## Redux Thunk Get Request
 
+Before starting making our store we will install two libraries `axios` and `redux-thunk`. To do so we will write the below command in our terminal:
+
+``` shell
+
+npm install axios redux-thunk
+
+```
+
+Once it is done we will make our store:
+
+``` js
+
+import { createStore, applyMiddleware } from "redux";
+import rootReducer from "./rootReducer";
+import thunk from "redux-thunk";
+
+const store = createStore(rootReducer, applyMiddleware(thunk));
+
+export default store;
+
+```
+
+
+
 ___
-
-
-
-
-
