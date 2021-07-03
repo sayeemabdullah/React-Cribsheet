@@ -529,8 +529,117 @@ export default appleReducer;
 So here we will subtract the `action.payload` in the place of 1. Now we can see that our application works fine and we have successfully implemented our **scenario 2**. 
 ___
 
+## Scenario 3
 
+We will request to fetch data of some users from a [JSONPlaceholder API](https://jsonplaceholder.typicode.com/users) and it will render as a list in our application if fetching is successful and will show an error message if fetching fails. 
 
+___
 
+## Async Actions
 
+First we will define ur user types inside our `userTypes` as below:
 
+``` js
+
+export const FETCH_USERS_REQUEST = "FETCH_USERS_REQUEST";
+export const FETCH_USERS_SUCCESS = "FETCH_USERS_SUCCESS";
+export const FETCH_USERS_FAILURE = "FETCH_USERS_FAILURE";
+
+```
+
+Now in `userActions` we will make three action creators as shown below:
+
+``` js
+
+import { FETCH_USERS_REQUEST } from "./userTypes";
+import { FETCH_USERS_SUCCESS } from "./userTypes";
+import { FETCH_USERS_FAILURE } from "./userTypes";
+
+export const fetchUsersRequest = () => {
+  return {
+    type: FETCH_USERS_REQUEST,
+  };
+};
+
+const fetchUsersSuccess = (users) => {
+  return {
+    type: FETCH_USERS_SUCCESS,
+    payload: users,
+  };
+};
+
+const fetchUsersFailure = (error) => {
+  return {
+    type: FETCH_USERS_FAILURE,
+    payload: error,
+  };
+};
+
+```
+
+Now in `userReducer` we will create the following reducer:
+
+``` js
+
+import { FETCH_USERS_REQUEST } from "./userTypes";
+import { FETCH_USERS_SUCCESS } from "./userTypes";
+import { FETCH_USERS_FAILURE } from "./userTypes";
+
+const initialState = {
+  loading: false,
+  users: [],
+  error: "", 
+};
+
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case FETCH_USERS_REQUEST:
+      return {
+        ...state,
+        loading: true,
+      };
+    case FETCH_USERS_SUCCESS:
+      return {
+        loading: false,
+        users: action.payload,
+        error: "",
+      };
+    case FETCH_USERS_FAILURE:
+      return {
+        loading: false,
+        users: [],
+        error: action.payload,
+      };
+    default:
+      return state;
+  }
+};
+
+export default reducer;
+
+``` 
+
+In `index.js` inside `redux` folder we will export all the actions:
+
+``` js
+
+export * from "./user/userActions";
+
+```
+
+And add our reducer in our `rootReducer` file:
+
+``` js
+
+import { combineReducers } from "redux";
+import userReducer from "./user/userReducer";
+
+const rootReducer = combineReducers({
+  user: userReducer,
+});
+
+export default rootReducer;
+
+```
+
+___
