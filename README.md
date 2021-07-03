@@ -645,7 +645,7 @@ ___
 
 ## Redux Thunk Get Request
 
-Before starting making our store we will install two libraries `axios` and [`redux-thunk`](). To do so we will write the below command in our terminal:
+Before starting making our store we will install two libraries `axios` and [`redux-thunk`](https://www.npmjs.com/package/redux-thunk). To do so we will write the below command in our terminal:
 
 ``` shell
 
@@ -766,3 +766,10 @@ export default connect(mapStateToProps, mapDispatchToProps)(UserContainer);
 ```
 I believe if we followed through the whole cribsheet and know react, the above code is pretty self-explanatory. 
 ___
+
+
+
+
+
+
+
