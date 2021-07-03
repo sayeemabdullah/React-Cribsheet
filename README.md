@@ -641,9 +641,11 @@ const rootReducer = combineReducers({
 export default rootReducer;
 
 ```
-
 ___
 
+## Redux Thunk Get Request
+
+___
 
 
 
