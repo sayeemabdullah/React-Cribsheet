@@ -83,7 +83,7 @@ ___
 
 ## How things work?
 
-After creating the application we will find `index.html` under **public** folder so here where the magic happens. When you run your application it runs only this file. Inside this file we will find a single `div` like below: 
+After creating the application we will find `index.html` under **public** folder so here is where the magic happens. When you run your application it runs only this file. Inside this file we will find a single `div` like below: 
 
 ``` html
 
@@ -175,7 +175,7 @@ const {street , city , country } = address;
 
 `this` is a keyword in JavaScript which doesn’t behave the same as C# or Java. The value of `this` is determined by how a function is called. If it is called a method in an object it will return the reference to that object and if it's called outside of an object it will return the global object or window object.
 
-If we want to fix that we can use the bind function so that we get reference every time like below: 
+If we want to fix that we can use the bind function so that we get references every time like below:
 
 ``` js
 const walk = person.walk.bind(person);
@@ -410,7 +410,7 @@ export default Name;
 
 ```
 
-Something to remember that when we render elements there should be one parent element like `<div></div>` as shown below: 
+Something to remember is that when we render elements there should be one parent element like `<div></div>` as shown below: 
 
 ``` js
 
@@ -518,7 +518,7 @@ ___
 
 ## Props
 
-**Props** include data we give to a component or in a simpler word we pass data from one component to another using **props**. 
+**Props** include data we give to a component or in a simpler words we pass data from one component to another using **props**. 
 
 So let’s say we want to send my name which is **Sayeem** to a component as props so that it says “Hello Sayeem!”.  There is a component name `Greet`. So first to send my name from the parent **(App.js)** to child **(Greet.js)** like below:
 
@@ -582,7 +582,42 @@ ___
 
 ## State
 
-**State** is managed within the component where the variable are not passed but declared in the function body. A state can be changed. In the functional component, a state can be accessed using **useState hooks** and on the other hand **this.state** is used to access in the class components.  
+**State** is managed within the component where the variable is not passed but declared in the function body. A state can be changed. In the functional component, a state can be accessed using **useState hooks** and on the other hand **this.state** is used to access in the class components.
+
+Below we have a component named **Message** where there is a text **Welcome Visitors!** which comes from the `state` and below that there is a button if we press that button the message changes to **"Thank you for subscribing!"**.
+
+``` js
+import React, { Component } from "react";
+
+class Message extends Component {
+  constructor() {
+    super(); 
+    this.state = {
+      message: "Welcome Visitors!",
+    };
+  }
+
+  changeMessage() {
+    this.setState({
+      message: "Thank you for subscribing!",
+    });
+  }
+
+  render() {
+    return (
+      <>
+        <h1>{this.state.message}</h1>
+        <button onClick={() => this.changeMessage()}>Subscribe</button>
+      </>
+    );
+  }
+}
+
+export default Message;
+
+```
+
+Here we have used `super()` because we extended react's component class and a call has to be made to the base class constructor. Beside that we have used `this.state` where all the properties of the states are stored which has been later change using `this.setState`. Besides that everything is pretty self explainotiory.
 ___
 
 
@@ -626,7 +661,7 @@ We can use logical & operator for conditional rendering like the code below:
 {this.state.tags.length === 0 && "No tags here!"}
 
 ```
-Here if the length is zero so which makes it true and when the first condition is true it prints the second condition. If there are 3 conditions or more then it will execute the last condition.
+Here, if the length is zero, which makes it true and when the first condition is true, it prints the second condition. If there are 3 conditions or more then it will execute the last condition.
 
 ___
 
@@ -731,3 +766,6 @@ ___
 > ##### To get a better understanding we can always give the [React Doc](https://reactjs.org/docs/hello-world.html) a read. 
 
 ___
+
+
+
