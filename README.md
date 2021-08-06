@@ -618,6 +618,62 @@ export default Message;
 ```
 
 Here we have used `super()` because we extended react's component class and a call has to be made to the base class constructor. Besides that we have used `this.state` where all the properties of the states are stored which has been later changed using `this.setState`. Besides that everything is pretty self-explanatory.
+
+Let talk about another scenario that there is a header that shows number **0** and there is a button below whenever we press that button the number is **increased by 5**. We might think the below code will do the work but sadly not.
+
+``` js
+
+import React, { Component } from "react";
+
+class Counter extends Component {
+  constructor() {
+    super();
+    this.state = {
+      count: 0,
+    };
+  }
+
+  incrementCount() {
+    this.setState({
+      count: this.state.count + 1,
+    });
+  }
+
+  incrementByFive() {
+    this.incrementCount();
+    this.incrementCount();
+    this.incrementCount();
+    this.incrementCount();
+    this.incrementCount();
+  }
+
+  render() {
+    return (
+      <>
+        <h1>{this.state.count}</h1>
+        <button onClick={() => this.incrementByFive()}>Increment by 5</button>
+      </>
+    );
+  }
+}
+
+export default Counter;
+
+```
+If we run the code we will see that the number only increase by 1 but in our code, we have called `this.incrementCount()` five times. The reason behind it is that **react makes multiple group state calls into a single update for better performance**. To solve the problem we will change the following codes:
+
+``` js
+
+incrementCount() {
+    this.setState((prevState) => ({
+      count: prevState.count + 1,
+    }));
+  }
+
+```
+
+So here we are using the previous value to increment the number. Now we will see that the code works fine.
+
 ___
 
 
@@ -766,3 +822,6 @@ ___
 > ##### To get a better understanding we can always give the [React Doc](https://reactjs.org/docs/hello-world.html) a read. 
 
 ___
+
+
+
