@@ -391,7 +391,7 @@ export default App;
 
 ``` 
 
-And on the other hand, a **Stateful Class Component** is implemented as a JavaScript class with state and render. Here the **state** is where we store property values that belong to the component and **render** is to display the specified HTML code inside the specified HTML element.
+And on the other hand, a **Stateful Class Component** is implemented as a JavaScript class with state and render. Here, the **state** is where we store property values belonging to the component and **render** displays the specified HTML code inside the specified HTML element.
 
 The structure of a simple stateful class component is as shown below:
 
@@ -584,7 +584,7 @@ ___
 
 **State** is managed within the component where the variable is not passed but declared in the function body. A state can be changed. In the functional component, a state can be accessed using **useState hooks** and on the other hand **this.state** is used to access in the class components.
 
-Below we have a component named **Message** where there is a text **Welcome Visitors!** which comes from the `state` and below that there is a button if we press that button the message changes to **"Thank you for subscribing!"**.
+Below we have a component named **Message** where there are a text **Welcome Visitors!** which comes from the `state` and below that there is a button if we press that button the message changes to **"Thank you for subscribing!"**.
 
 ``` js
 import React, { Component } from "react";
@@ -617,7 +617,7 @@ export default Message;
 
 ```
 
-Here we have used `super()` because we extended react's component class and a call has to be made to the base class constructor. Beside that we have used `this.state` where all the properties of the states are stored which has been later change using `this.setState`. Besides that everything is pretty self explainotiory.
+Here we have used `super()` because we extended react's component class and a call has to be made to the base class constructor. Besides that we have used `this.state` where all the properties of the states are stored which has been later changed using `this.setState`. Besides that everything is pretty self-explanatory.
 ___
 
 
@@ -766,6 +766,3 @@ ___
 > ##### To get a better understanding we can always give the [React Doc](https://reactjs.org/docs/hello-world.html) a read. 
 
 ___
-
-
-
